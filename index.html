@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>My Carousel</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet/style.css">
+</head>
+<body>
+
+<div id="container" class="center">
+
+    <div id="carouselmain" class="center">
+        <div class="carousel-image" style="display: block">
+            <img src="http://smashinghub.com/wp-content/uploads/2010/07/nature-photography-16.jpg">
+        </div>
+
+        <div class="carousel-image" style="display: none">
+            <img src="http://blog.uprinting.com/wp-content/uploads/2011/12/Nature-Photography-02.jpg">
+        </div>
+
+        <div class="carousel-image" style="display: none">
+            <img src="http://naturewallpaper.rocks/wp-content/uploads/2015/06/nature-wallpaper-animated-desktop.jpg">
+        </div>
+    </div>
+
+    <div id="nav" class="center">
+        <a href="#"  id="prev" class="move-left">Previous</a>
+        <a href="#"  id="next" class="move-right">Next</a>
+    </div>
+
+</div>
+
+</body>
+
+<footer>
+    <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script>
+        /*  Delay : the default delay for carousel used is 3 seconds which can be change to any limit by providing it in the settings
+         *
+         *  Action buttons : the default action button are the element with id's  'prev' and 'next' which also can be changed from the settings
+         *
+         *  workflow : the carousel animations are handled used thg jquery fadeout and fadein method.This animation also pauses when user hovers
+         *  the mouse on the container and resumes when user hovers out the cursor
+         */
+
+        /* I am using window.load as it may take some time for the images to load
+           once all the images are loaded then start the carousel
+         */
+        $(window).load(function() {
+            $.carousel({'delay':4000});
+        });
+    </script>
+</footer>
+
+</html>

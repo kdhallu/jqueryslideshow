@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+.center {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+
+.move-right{
+    float: right;
+}
+
+.move-left{
+    float : left;
+}
